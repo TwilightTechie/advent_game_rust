@@ -17,6 +17,7 @@ pub fn draw_text(txt: &str, pos: [f64; 2], size: u32, gc: &mut GlyphCache, c: &C
 pub fn draw_center(txt: &str, size: u32, bounds: [f64; 2], gc: &mut GlyphCache, c: &Context, gl: &mut GlGraphics) {
     let half_size = f64::from(size) / 2.0;
     let num_chars = txt.len() as f64;
+    print("MY name is piyush")
 
     let x = (bounds[0] / 2.0) - (num_chars * half_size) / 2.0;
     let y = (bounds[1] / 2.0) - half_size;
